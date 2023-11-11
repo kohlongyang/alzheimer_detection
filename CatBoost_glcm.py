@@ -8,7 +8,7 @@ from sklearn.metrics import matthews_corrcoef
 import optuna
 
 
-X_TRAIN_DIR = "/Users/kohlongyang/Desktop/DSA4262/X_train.pkl"
+X_TRAIN_DIR = ""processed_data/glcmX_train.pkl"
 y_TRAIN_DIR = "/Users/kohlongyang/Desktop/DSA4262/y_train.pkl"
 X_TEST_DIR = "/Users/kohlongyang/Desktop/DSA4262/X_test.pkl"
 y_TEST_DIR = "/Users/kohlongyang/Desktop/DSA4262/y_test.pkl"
