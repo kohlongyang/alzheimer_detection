@@ -8,10 +8,10 @@ from sklearn.metrics import matthews_corrcoef
 import optuna
 
 
-X_TRAIN_DIR = ""processed_data/glcmX_train.pkl"
-y_TRAIN_DIR = "/Users/kohlongyang/Desktop/DSA4262/y_train.pkl"
-X_TEST_DIR = "/Users/kohlongyang/Desktop/DSA4262/X_test.pkl"
-y_TEST_DIR = "/Users/kohlongyang/Desktop/DSA4262/y_test.pkl"
+X_TRAIN_DIR = "processed_data/glcmX_train.pkl"
+y_TRAIN_DIR = "processed_data/glcm/y_train.pkl"
+X_TEST_DIR = "processed_data/glcm/X_test.pkl"
+y_TEST_DIR = "processed_data/glcm/y_test.pkl"
 
 X_train = pd.read_pickle(X_TRAIN_DIR)
 y_train = pd.read_pickle(y_TRAIN_DIR)
