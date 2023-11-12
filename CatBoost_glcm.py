@@ -3,7 +3,7 @@ import pandas as pd
 import catboost as cb
 from catboost import CatBoostClassifier
 from sklearn.metrics import mean_squared_error
-from sklearn.metrics import f2beta_score, classification_report, confusion_matrix
+from sklearn.metrics import fbeta_score, classification_report, confusion_matrix
 from sklearn.metrics import matthews_corrcoef
 import optuna
 
