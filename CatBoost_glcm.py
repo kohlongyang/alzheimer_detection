@@ -3,7 +3,7 @@ import pandas as pd
 import catboost as cb
 from catboost import CatBoostClassifier
 from sklearn.metrics import mean_squared_error
-from sklearn.metrics import classification_report, confusion_matrix
+from sklearn.metrics import f2beta_score, classification_report, confusion_matrix
 from sklearn.metrics import matthews_corrcoef
 import optuna
 
@@ -63,3 +63,5 @@ accuracy = (y_pred == np.array(y_test)).mean()
 print("Test Accuracy:", accuracy) 
 print(classification_report(y_test,y_pred))
 print(matthews_corrcoef(y_test,y_pred))
+f2_score = fbeta_score(y_test, y_pred, beta=2, average='weighted')
+print("F2 Score:", f2_score)
